@@ -7,9 +7,9 @@ This project was generated with Angular CLI version 9.0.6 and the NodeJS version
 
 # Version
 
-- Angular CLI: 9.0.6
-- NodeJs: 10.16.3
-- npm: 6.14.2
+- [Angular CLI](https://angular.io): 9.0.6
+- [NodeJs](https://nodejs.org): 10.16.3
+- [npm](https://www.npmjs.com/): 6.14.2
 <<<<<<< HEAD
 
 
@@ -17,11 +17,11 @@ This project was generated with Angular CLI version 9.0.6 and the NodeJS version
 
 ## Lesson 2
 
-* 'server-farm'
-* {{ }}, *ngIf, `[(ngModel)]`
-* "server" creation and simulation
+* **server-farm** component creation
+* `{{ }}`, `*ngIf`, `[(ngModel)]`
+* "server" variable creation
 
 ## Lesson 1
 
-* 'success-alert' and 'warning-alert' tag creation 
+* **success-alert** and **warning-alert** component creation 
 * `[ngStyle]`, `[ngClass]`
