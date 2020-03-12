@@ -10,3 +10,17 @@ This project was generated with Angular CLI version 9.0.6 and the NodeJS version
 - Angular CLI: 9.0.6
 - NodeJs: 10.16.3
 - npm: 6.14.2
+
+
+# About the course
+
+## Lesson 2
+
+* 'server-farm'
+* {{ }}, *ngIf, `[(ngModel)]`
+* "server" creation and simulation
+
+## Lesson 1
+
+* 'success-alert' and 'warning-alert' tag creation 
+* `[ngStyle]`, `[ngClass]`
