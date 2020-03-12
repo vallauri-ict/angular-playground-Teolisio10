@@ -18,7 +18,7 @@ This project was generated with Angular CLI version 9.0.6 and the NodeJS version
 
 * **server-farm** component creation
 * `{{ }}`, `*ngIf`, `[(ngModel)]`
-* "server" variable creation
+* **server** variable creation
 
 ## Lesson 1
 
