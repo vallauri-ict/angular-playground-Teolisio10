@@ -10,7 +10,6 @@ This project was generated with Angular CLI version 9.0.6 and the NodeJS version
 - [Angular CLI](https://angular.io): 9.0.6
 - [NodeJs](https://nodejs.org): 10.16.3
 - [npm](https://www.npmjs.com/): 6.14.2
-<<<<<<< HEAD
 
 
 # About the course
