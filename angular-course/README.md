@@ -1,4 +1,4 @@
-# angular-course :man_technologist:
+# angular-course :computer:
 
 ### Fina Matteo - 5B INF - I.I.S. Vallauri, Fossano (CN)
 
