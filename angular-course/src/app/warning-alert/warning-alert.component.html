@@ -1,0 +1,4 @@
+<div class="alert alert-warning" role="alert">
+    <span [ngClass]="{ blinking: numVulnerabilities > 9 }"> {{ stSeverity }} </span>
+    | Warning: I've found {{ numVulnerabilities }} vulnerabilities.
+</div>
