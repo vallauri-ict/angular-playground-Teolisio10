@@ -1,21 +1,25 @@
 <div class="row">
-    <div class="col-sm-9">
-        <input id="serverName" name="serverName" type="text" class="form-control" [(ngModel)]="serverName" (input)="onChangeServerName()" placeholder="Insert server name here...">
+    <div class="col-sm-8">
+        <input id="serverName" type="text" class="form-control" [(ngModel)]="serverName" (input)="onChangeServerName()" placeholder="Insert server name here...">
     </div>
-    <div class="col-sm-3">
-        <button class="btn btn-primary" [disabled]="serverName.length===0" (click)="onCreateServer()"> Add server </button>
+    <div class="col-sm-4">
+        <button class="btn btn-primary" [disabled]="serverName.length == 0" (click)="onCreateServer()"> Add server </button>
     </div>
 </div>
-
+<br>
 <div class="row">
     <div class="col-sm-12">
-        <p *ngIf="serverCreated; else noServer"> Server created. Server name is {{ serverName }} </p>
-        <ng-template #noServer>
-            <p> No server created yet </p>
+        <ng-container *ngIf="serverCreated;then server;else noServer"> </ng-container>
+        <ng-template #server>
+            <p> Server created. Server name is: {{ serverName }} </p>
         </ng-template>
+        <ng-template #noServer>
+            <p> The servers you create will appear here... </p>
+        </ng-template>
+        <p *ngIf="servers.length == 0"><i> 0 servers created so far... </i></p>
     </div>
 </div>
-
+<br>
 <div class="row">
     <div class="col-sm-12">
         <app-server *ngFor="let server of servers"> </app-server>

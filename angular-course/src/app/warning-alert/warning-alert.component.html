@@ -1,4 +1,5 @@
-<div class="alert alert-warning" role="alert">
-    <span [ngClass]="{ blinking: numVulnerabilities > 9 }"> {{ stSeverity }} </span>
-    | Warning: I've found {{ numVulnerabilities }} vulnerabilities.
-</div>
+<!-- <p [ngStyle]="{fontWeight: numVulnerabilities > 9 ? 'bold' : 'normal'}"> -->
+<p class="alert alert-danger" [ngStyle]="getParagraphStyle()">
+    <span [ngClass]="{blinking: numVulnerabilities > 9}">{{stSeverity}} Warning:</span>
+    I've found {{numVulnerabilities}} vulnerabilities.
+</p>

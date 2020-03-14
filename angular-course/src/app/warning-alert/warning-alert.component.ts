@@ -18,4 +18,8 @@ export class WarningAlertComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getParagraphStyle() {
+    return { fontWeight: this.numVulnerabilities > 9 ? 'bold' : 'normal' }
+  }
+
 }
