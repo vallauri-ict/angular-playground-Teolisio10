@@ -1,4 +1,4 @@
-# :computer: angular-playground-Teolisio10 :computer:
+# :computer: angular-playground-Teolisio10
 
 ### Fina Matteo - 5B INF - I.I.S. Vallauri, Fossano (CN)
 
