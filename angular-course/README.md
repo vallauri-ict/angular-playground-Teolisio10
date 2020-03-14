@@ -1,4 +1,4 @@
-# :computer: angular-course :computer:
+# :page_facing_up: angular-course :page_facing_up:
 
 ### Fina Matteo - 5B INF - I.I.S. Vallauri, Fossano (CN)
 
