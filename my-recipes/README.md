@@ -10,7 +10,6 @@ It will inlcude a collection of recipes in which the user have the possibility t
 ## Lesson 2
 
 **html** file update:
-
 * *app.component.html*
     * *header.component.html* and *header.component.ts*
     * *recipes.component.html*
