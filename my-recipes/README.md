@@ -26,7 +26,7 @@ It will inlcude a collection of recipes in which the user have the possibility t
 app.component.html
 ├── header.component.html and header.component.ts
 ├── recipes.component.html
-│  ├── recipe-list.component.html
+│   └── recipe-list.component.html
 └── recipes.component.html
 ```
 
