@@ -22,13 +22,11 @@ It will inlcude a collection of recipes in which the user have the possibility t
         * *recipe-list.component.html*
     * *shopping-list.component.html*
 
-`
-*app.component.html*
-├── *header.component.html* and *header.component.ts*
-├── *recipes.component.html*
-│   ├── recipe-list.component.html
-└── *recipes.component.html*
-`
+`*app.component.html*<br>
+├── *header.component.html* and *header.component.ts*<br>
+├── *recipes.component.html*<br>
+│   ├── recipe-list.component.html<br>
+└── *recipes.component.html*`
 
 
 ## Lesson 1
