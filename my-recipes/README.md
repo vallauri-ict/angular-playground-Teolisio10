@@ -1,4 +1,4 @@
-# my-recipes :page_facing_up: :cookie:
+# my-recipes :page_facing_up::cookie:
 
 ### Fina Matteo - 5B INF - I.I.S. Vallauri, Fossano (CN)
 
