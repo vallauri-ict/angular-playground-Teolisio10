@@ -1,4 +1,4 @@
-# my-recipes :page_facing_up:
+# my-recipes :page_facing_up: :cookie:
 
 ### Fina Matteo - 5B INF - I.I.S. Vallauri, Fossano (CN)
 
@@ -21,11 +21,11 @@ It will inlcude a collection of recipes in which the user have the possibility t
 └── recipes.component.html
 ```
 
-* **recipe.model.ts** file creation
+* **recipe.model.ts** file creation, a class for **Recipes**
 
 * Usage of `*ngFor` for items component creation
-* Usage of data-binding for the recipe info with the `@Input` decorator
-* Each Recipe has a ***name*** a ***description*** and an ***imagePath***
+* Usage of **data-binding** for the recipe info with the `@Input` decorator
+* Each Recipe has a *name* a *description* and an *imagePath*
 
 
 
@@ -51,10 +51,13 @@ app.component.html
     * **recipe-list** sub-component creation from Angular CLI
         * **recipe-item** sub-component creation from Angular CLI
 
-* Project's folders structure:
+
+
+
+## Project's folders structure:
 ```
 my-recipes/
-├── header/
+├── header
 ├── recipes/
 │   ├── recipe-detail
 │   └── recipe-list/
