@@ -10,7 +10,21 @@ It will inlcude a collection of recipes in which the user have the possibility t
 
 
 ## Lesson 4
-###
+### Shared root, ingredients, shopping-list and its item
+
+* **html** and **typescript** files update:
+```
+┐
+├── ingredient.model.ts
+│
+├── shopping-list.component.html and shopping-list.component.ts
+└   └── shopping-edit.component.html
+```
+
+* `shared` folder creation, which includes files accessible from all the components
+* **ingredients.model.ts** file creation in the new root
+* Usage of `*ngFor` for *ingredients* creation
+    * Each Ingredient has a *name* and an *amount*
 
 
 
