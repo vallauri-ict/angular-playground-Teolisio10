@@ -8,6 +8,7 @@ This is going to be an app for the shopping list compiling.<br>
 It will inlcude a collection of recipes in which the user have the possibility to watch and edit details.
 
 
+
 ## Lesson 5
 ### Database and data-storage
 
