@@ -8,6 +8,14 @@ This is going to be an app for the shopping list compiling.<br>
 It will inlcude a collection of recipes in which the user have the possibility to watch and edit details.
 
 
+## Lesson 5
+### Database and data-storage
+
+* **data-storage** service created by Angular CLI in the `shared` folder
+* **db.json** file creation: it contains the same data of the **recipe-list.component.ts** from the *Recipe* array
+    * the database can be easily managed by installing the [JSON Server](www.npmjs.com/package/json-server) npm, that fake the API structure without coding
+
+
 
 ## Lesson 4
 ### Shared root, ingredients, shopping-list and its item
