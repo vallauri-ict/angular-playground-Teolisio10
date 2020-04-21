@@ -9,16 +9,28 @@ It will inlcude a collection of recipes in which the user have the possibility t
 
 
 
+## Lesson 7
+### Navigation in the header
+
+* **html** and **typescript** files update:
+```
+app.component.ts and app.component.html
+└── header.component.html and header.component.ts
+```
+
+* click over the button in the **header.component** controlled by the *onSelect* function which generate an Event 
+* in the **app.component** the correct feature is loaded by clicking the right button
+    * with a `*ngIf` the correct component (*<app-recipe>* or *<app-shopping-list>*)is loaded and showed
+
+
+
 ## Lesson 6
 ### Database data access
 
 * **typescript** files update:
 ```
-┐
-├── app.module.ts
-│
+app.module.ts
 ├── data-storage.service.ts
-│
 └── recipes-list.component.html
 ```
 
@@ -45,9 +57,8 @@ It will inlcude a collection of recipes in which the user have the possibility t
 ```
 ┐
 ├── ingredient.model.ts
-│
-├── shopping-list.component.html and shopping-list.component.ts
-└   └── shopping-edit.component.html
+└── shopping-list.component.html and shopping-list.component.ts
+    └── shopping-edit.component.html
 ```
 
 * `shared` folder creation, which includes files accessible from all the components
@@ -62,11 +73,10 @@ It will inlcude a collection of recipes in which the user have the possibility t
 
 * **html** and **typescript** files update:
 ```
-┐
+recipes.component.html
 ├── recipe-detail.component.html
-├── recipe-list.component.html and recipe-list.component.ts
-│   └── recipe-item.component.html and recipe-item.component.ts
-└── recipes.component.html
+└── recipe-list.component.html and recipe-list.component.ts
+    └── recipe-item.component.html and recipe-item.component.ts
 ```
 
 * **recipe.model.ts** file creation, a class for **Recipes**
