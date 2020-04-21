@@ -9,6 +9,26 @@ It will inlcude a collection of recipes in which the user have the possibility t
 
 
 
+## Lesson 6
+### Database data access
+
+* **typescript** files update:
+```
+┐
+├── app.module.ts
+│
+├── data-storage.service.ts
+│
+└── recipes-list.component.html
+```
+
+* **db.json** data update
+* **app.module.ts** *HttpClientModule* import
+    * **data-storage.service.ts** *HttpClient* module import and code update in order to reach database data for */recipes*
+        * **recipe-list.component.ts** static array commented because now data came from **db.json** and populate the array *recipes*
+
+
+
 ## Lesson 5
 ### Database and data-storage
 
