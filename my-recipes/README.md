@@ -9,6 +9,24 @@ It will inlcude a collection of recipes in which the user have the possibility t
 
 
 
+## Lesson 9
+### Local Reference for the Shopping List
+* **html** and **typescript** files update:
+```
+app.module.ts
+└── shopping-list.component.html and shopping-list.component.ts
+    └── shopping-edit.component.html and shopping-edit.component.ts
+```
+
+* by clicking over the add button a new item added in the form can be inserted in the shopping list
+* add of *FormsModule* in the **app.module** for using data reffered to forms
+* use of the `#` to set variables *#nameInput* and *#amountInput* in **shopping-edit** html to make them accessible from the .ts file
+    * with `@ViewChild` is possible to access an html element that has the `#`
+    * event *onAddItem* generated when the Add button in clicked and the new *Ingredient* is passed 
+* in the **shopping-list** the event in intercepted and so the Ingredient, that is showed simply by adding it in the array of *ingredients*
+
+
+
 ## Lesson 8
 ### Property and Event Binding
 
@@ -23,7 +41,7 @@ recipes.component.html and recipes.component.ts
 * use of property and event binding in order to make the *recipes section* work
     * the event is propagated from the **recipe-item** to the upper roots in order to reach the **recipe-detail**
 * the useful data are stored in the *recipe* variable
-* *@Input* is used to recive data and *@Output* is used to create the Event (with the *EventEmitter*) that will be sent
+* `@Input` is used to recive data and `@Output` is used to create the Event (with the *EventEmitter*) that will be sent
     * by writing the *@Output variable* in rouded brackets, like *(click)*, the event is recalled
 * in **recipe-component** is used an `*ngIf` to check the *recipe* passed by the generated Event, so the **recipe-detail** section is showed with the data of the **recipe-item** selected
 

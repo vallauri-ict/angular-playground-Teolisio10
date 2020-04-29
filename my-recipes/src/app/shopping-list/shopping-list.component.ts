@@ -18,5 +18,9 @@ export class ShoppingListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onIngredientAdded(ingredient: Ingredient) {
+    // AGGIUNGIAMO L'INGREDIENTE NEL VETTORE
+    this.ingredients.push(ingredient);
+  }
  
 }
