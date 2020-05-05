@@ -3,7 +3,9 @@
         <app-shopping-edit (ingredientAdded)="onIngredientAdded($event)"> </app-shopping-edit>
         <hr>
         <ul class="list-group">
-            <a href="#" class="list-group-item" style="cursor: pointer" *ngFor="let item of ingredients">
+            <!--<a appHighlight href="#" class="list-group-item" style="cursor: pointer" *ngFor="let item of ingredients">-->
+            <!--<a appHighlight [defaultColor]="'LightGreen'" href="#" class="list-group-item" style="cursor: pointer" *ngFor="let item of ingredients">-->
+            <a [appHighlight]="'Orange'" [defaultColor]="'LightGreen'" href="#" class="list-group-item" style="cursor: pointer" *ngFor="let item of ingredients">
                 {{ item.name }} ({{ item.amount }})
             </a>
         </ul>

@@ -9,6 +9,26 @@ It will inlcude a collection of recipes in which the user have the possibility t
 
 
 
+## Lesson 10
+### Hover and highlight items
+
+* **html** and **typescript** files update:
+```
+app.module.ts
+├── highlight.directive.ts
+├── recipe-item.component.html
+└── shopping-list.component.html
+```
+* CLI generation of the **highlight.directive.ts** component in the `shared` root, so it is also included in the modules
+    * at first the change of the color was made by *ElementRef*, than with the *Renderer2* and finally by creating a **binding** with `@HostBinding`, that is the faster and cleaner way
+    * obviusly is necessary call two `@HostListener`, one for the *enter* of the mouse and one for the *leave* 
+* call of *appHighlight* in the **recipe-item.component.html** and **shopping-list.component.html**
+    * at first called only *appHighlight* that is the anchor to access the DOM tag
+    * then add of the possibility to access the *\[defaultColor\]* variable 
+    * finally changed so appHighlight must be called like *\[appHighlight\]* because the variable has the same name of the `@Directive`, so by changing color it can be easily typed *\[appHighlight\]="'NewColor'"*
+
+
+
 ## Lesson 9
 ### Local Reference for the Shopping List
 * **html** and **typescript** files update:
@@ -158,6 +178,7 @@ my-recipes/
 │   ├── recipe-detail
 │   └── recipe-list/
 │       └── recipe-item
+├── shared
 └── shopping-list/
     └── shopping-edit
 ```

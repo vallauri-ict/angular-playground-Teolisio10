@@ -1,4 +1,6 @@
-<a href="#" (click)="onSelected()" class="list-group-item clearfix">
+<!--<a appHighlight href="#" (click)="onSelected()" class="list-group-item clearfix">-->
+<!--<a appHighlight [defaultColor]="'LightYellow'" href="#" (click)="onSelected()" class="list-group-item clearfix">-->
+<a [appHighlight] [defaultColor]="'LightYellow'" href="#" (click)="onSelected()" class="list-group-item clearfix">
     <div class="pull-left">
         <!-- recipe DISPONIBILE SE SI EFFETTUA IL DATA-BINDING -->
         <h4 class="list-group-item-heading"> {{ recipe.name }} </h4>
