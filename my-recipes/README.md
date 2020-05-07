@@ -9,6 +9,26 @@ It will inlcude a collection of recipes in which the user have the possibility t
 
 
 
+## Lesson 11
+### Directive for Manage
+
+* **html** and **typescript** files update:
+```
+app.module.ts
+├── dropdown.directive.ts
+├── recipe-detail.component.html
+└── header.component.html
+```
+* **dropdown.directive.ts** file creation manually in the `shared` root
+    * the module must be added in the **app.module.ts** file 
+* this exercise should make the Bootstrap *dropdown-list* work, but not by using the Bootstrap javascript
+    * the `@Directive` *appDropdown* is called in **recipe-detail.component.html** and in **header.component.ts** on the tag that implements the Bootstrap class *open*
+    * in the **dropdown.directive.ts** file the **binding** over the *open* class is permitted by `@HostBinding`, so is now possible intercept when the class is triggered
+        * at first a simple `@HostListener` was triggered on the *click* on the tag that trigger the class
+        * then the `@HostListener` changed (*@HostListener('document:click', \['$event'\])*) and check also the event and who triggered the event so the problem of the dropdown that remain open overcome
+
+
+
 ## Lesson 10
 ### Hover and highlight items
 
@@ -31,13 +51,13 @@ app.module.ts
 
 ## Lesson 9
 ### Local Reference for the Shopping List
+
 * **html** and **typescript** files update:
 ```
 app.module.ts
 └── shopping-list.component.html and shopping-list.component.ts
     └── shopping-edit.component.html and shopping-edit.component.ts
 ```
-
 * by clicking over the add button a new item added in the form can be inserted in the shopping list
 * add of *FormsModule* in the **app.module** for using data reffered to forms
 * use of the `#` to set variables *#nameInput* and *#amountInput* in **shopping-edit** html to make them accessible from the .ts file
@@ -57,7 +77,6 @@ recipes.component.html and recipes.component.ts
 └── recipes-list.component.html and recipes-list.component.ts
     └── recipe-item.component.html and recipe-item.component.ts
 ```
-
 * use of property and event binding in order to make the *recipes section* work
     * the event is propagated from the **recipe-item** to the upper roots in order to reach the **recipe-detail**
 * the useful data are stored in the *recipe* variable
@@ -75,7 +94,6 @@ recipes.component.html and recipes.component.ts
 app.component.ts and app.component.html
 └── header.component.html and header.component.ts
 ```
-
 * click over the button in the **header.component** controlled by the *onSelect* function which generate an Event 
 * in the **app.component** the correct feature is loaded by clicking the right button
     * with a `*ngIf` the correct component (*<app-recipe>* or *<app-shopping-list>*)is loaded and showed
@@ -91,7 +109,6 @@ app.module.ts
 ├── data-storage.service.ts
 └── recipes-list.component.html
 ```
-
 * **db.json** data update
 * **app.module.ts** *HttpClientModule* import
     * **data-storage.service.ts** *HttpClient* module import and code update in order to reach database data for */recipes*
@@ -118,7 +135,6 @@ app.module.ts
 └── shopping-list.component.html and shopping-list.component.ts
     └── shopping-edit.component.html
 ```
-
 * `shared` folder creation, which includes files accessible from all the components
 * **ingredients.model.ts** file creation in the new root
 * Usage of `*ngFor` for *ingredients* creation
@@ -136,9 +152,7 @@ recipes.component.html
 └── recipe-list.component.html and recipe-list.component.ts
     └── recipe-item.component.html and recipe-item.component.ts
 ```
-
 * **recipe.model.ts** file creation, a class for **Recipes**
-
 * Usage of `*ngFor` for items component creation
 * Usage of **data-binding** for the recipe info with the `@Input` decorator
 * Each Recipe has a *name* a *description* and an *imagePath*
