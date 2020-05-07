@@ -10,7 +10,7 @@ It will inlcude a collection of recipes in which the user have the possibility t
 
 
 ## Lesson 11
-### Directive for Manage
+### Directive for dropdown
 
 * **html** and **typescript** files update:
 ```
