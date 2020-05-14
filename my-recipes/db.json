@@ -1,29 +1,95 @@
 {
     "recipes": [
         {
-            "name": "A Test Recipe",
+            "name": "Grilled meat",
             "description": "This is simply a test.",
-            "imagePath": "https://cdn.pixabay.com/photo/2016/06/15/19/09/food-1459693_960_720.jpg"
+            "imagePath": "https://cdn.pixabay.com/photo/2016/06/15/19/09/food-1459693_960_720.jpg",
+            "ingredients": [
+                {
+                    "name": "Meat",
+                    "amount": 3
+                },
+                {
+                    "name": "Spices",
+                    "amount": 6
+                }
+            ]
         },
         {
-            "name": "Another Test",
+            "name": "Pancakes",
             "description": "A great recipe to test.",
-            "imagePath": "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg"
+            "imagePath": "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg",
+            "ingredients": [
+                {
+                    "name": "Eggs",
+                    "amount": 8
+                },
+                {
+                    "name": "Syrup",
+                    "amount": 1
+                }
+            ]
         },
         {
             "name": "Burrito",
             "description": "A flour tortilla rolled or folded around a filling (as of meat, beans, and cheese).",
-            "imagePath": "https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg"
+            "imagePath": "https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg",
+            "ingredients": [
+                {
+                    "name": "Meat",
+                    "amount": 1
+                },
+                {
+                    "name": "Beans",
+                    "amount": 20
+                },
+                {
+                    "name": "Cheese",
+                    "amount": 4
+                }
+            ]
         },
         {
             "name": "Fruitcake",
             "description": "Fresh cake made with candied or dried fruit, nuts, and spices, and optionally soaked in spirits.",
-            "imagePath": "https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg"
+            "imagePath": "https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg",
+            "ingredients": [
+                {
+                    "name": "Strawberries",
+                    "amount": 7
+                },
+                {
+                    "name": "Ananas",
+                    "amount": 1
+                },
+                {
+                    "name": "Blueberries",
+                    "amount": 18
+                },
+                {
+                    "name": "Raspberries",
+                    "amount": 12
+                }
+            ]
         },
         {
             "name": "Tomato Pasta",
             "description": "Pasta al pomodoro is an Italian food typically prepared with pasta, olive oil, fresh tomatoes, basil, and various other fresh ingredients.",
-            "imagePath": "https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg"
+            "imagePath": "https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg",
+            "ingredients": [
+                {
+                    "name": "Pasta",
+                    "amount": 165
+                },
+                {
+                    "name": "Tomatoes",
+                    "amount": 11
+                },
+                {
+                    "name": "Basil",
+                    "amount": 6
+                }
+            ]
         }
     ]
 }

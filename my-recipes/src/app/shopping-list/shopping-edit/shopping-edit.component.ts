@@ -1,5 +1,6 @@
 import { Component, OnInit, ElementRef, ViewChild, EventEmitter, Output } from '@angular/core';
 import { Ingredient } from 'src/app/shared/ingredient.model';
+import { ShoppingListService } from '../shopping-list.service';
 
 @Component({
   selector: 'app-shopping-edit',
@@ -11,9 +12,9 @@ export class ShoppingEditComponent implements OnInit {
   @ViewChild('nameInput') nameInputRef: ElementRef;
   @ViewChild('amountInput') amountInputRef: ElementRef;
   // USIAMO IL MODELLO Ingredient E GENERIAMO UN EVENTO
-  @Output() ingredientAdded = new EventEmitter<Ingredient>();
+  //@Output() ingredientAdded = new EventEmitter<Ingredient>();
 
-  constructor() { }
+  constructor(private slService: ShoppingListService) { }
 
   ngOnInit(): void {
   }
@@ -25,7 +26,9 @@ export class ShoppingEditComponent implements OnInit {
     const newIngredient: Ingredient = new Ingredient(ingName, ingAmount);
     // EMITTIAMO L'EVENTO PASSANDO L'INGREDIENTE CREATO CHE INTERCETTEREMO NEL app-shopping-edit
     // IN shopping-list HTML, INTERCETTANDO L'ARGOMENTO newIngredient CON $event
-    this.ingredientAdded.emit(newIngredient);
+    //this.ingredientAdded.emit(newIngredient);
+
+    this.slService.addIngredient(newIngredient);
   }
 
   // arrayPush(name, amount) {    

@@ -3,6 +3,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 // OCCORRE EFFETTUARE L'import MANUALMENTE NEL CASO L'IDE NON LO FACCIA
 import { Recipe } from '../recipe.model';
 import { DataStorageService } from '../../shared/data-storage.service';
+import { RecipeService } from '../recipe.service';
 
 @Component({
   selector: 'app-recipe-list',
@@ -12,8 +13,9 @@ import { DataStorageService } from '../../shared/data-storage.service';
 export class RecipeListComponent implements OnInit {
   @Output() recipeWasSelected = new EventEmitter<Recipe>();
 
+  
   // ARRAY DI Recipe DA VISUALIZZARE
-  recipes: Recipe[] = [
+  //recipes: Recipe[] = [
     /*
     new Recipe('A test Recipe', 'This is a test', 'https://image.freepik.com/vettori-gratuito/illustrazione-del-razzo-volante-di-pixel_41992-760.jpg'),
     new Recipe('Test', 'aaaaa', 'https://image.freepik.com/vettori-gratuito/illustrazione-del-razzo-volante-di-pixel_41992-760.jpg'),
@@ -22,22 +24,24 @@ export class RecipeListComponent implements OnInit {
     new Recipe('School', 'ddddd', 'https://image.freepik.com/vettori-gratuito/illustrazione-del-razzo-volante-di-pixel_41992-760.jpg'),
     new Recipe('Food', 'eeeeeeee', 'https://image.freepik.com/vettori-gratuito/illustrazione-del-razzo-volante-di-pixel_41992-760.jpg')
     */
-  ];
+  //];
 
-  constructor(private dataStorageService: DataStorageService) { }
+  //constructor(private dataStorageService: DataStorageService) { }
+  constructor(public recipeService: RecipeService) { }
 
   ngOnInit(): void {
     // data CONTIENE I NOSTRI DATI ED E' UN ARRAY DI OBJECT
     // USANDO any ACCETTA ARRAY DI QUALSIASI OGGETTO
-    this.dataStorageService.sendGetRequest('recipes').subscribe((data: any[]) => {
+    /*this.dataStorageService.sendGetRequest('recipes').subscribe((data: any[]) => {
       console.log(data);
       this.recipes = data;
-    })
+    })*/
+    this.recipeService.getRecipes();
   }
 
-  onRecipeSelected(recipe: Recipe) {
+  /*onRecipeSelected(recipe: Recipe) {
     // EMETTIAMO UN Recipe
     this.recipeWasSelected.emit(recipe);
-  }
+  }*/
 
 }

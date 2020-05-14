@@ -9,6 +9,25 @@ It will inlcude a collection of recipes in which the user have the possibility t
 
 
 
+## Lesson 12
+### Services for recipes and shopping list
+* **html** and **typescript** files update:
+```
+db.json
+├── app.module.ts
+├──── recipe.component.html and recipe.component.ts, recipe.model-ts, recipe.service.ts
+│     └── recipe-list.component.html and recipe-list.component.html
+│         └── recipe-list.component.html and recipe-list.component.html
+└──── shopping-list.component.html and shopping-list.component.ts, shopping-list.service.ts
+      └── shopping-edit.component.ts
+```
+* **shopping-list.component.ts** and **recipe.service.ts** file creation, to implement *services*
+* in general the services had permitted a semplification of the code and the main managament is made in the files **recipe.service.ts** ans **shopping-list.service.ts**, so from the **component.ts** files is possible to call the function that returns data
+* the relation between the **component.ts** files and the **service.ts** is permitted by *Injections*
+* in the *shoppin-list* case there is also the management for the add of a new *Ingredient*, so now the database must be updated in order to also have the recipes informations related to ingredient informations
+
+
+
 ## Lesson 11
 ### Directive for dropdown
 
