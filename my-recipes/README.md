@@ -9,6 +9,23 @@ It will inlcude a collection of recipes in which the user have the possibility t
 
 
 
+## Lesson 14
+### Routing
+* **html** and **typescript** files update:
+```
+app.module.ts, app.component.ts, app-routing.component.ts
+├── shopping-list.component.html
+├──── header.component.html and header.component.ts
+├────── recipe-detail.component.html
+└──────── recipe-item.component.html
+```
+* creation of the **app-routing.module.ts** file to manage correctly the routes with the *appRoutes* property that has all the useful routes (*/recipes*, */shopping-list*, *the default that redirect to /recipes*); remember to update the **app.module.ts** file by adding *AppRoutingModule* to the imports  
+* now is possible to call in the **app.component.html** just `<router-outlet>` instead of the tags to display the shopping-list or the recipes
+* than in the **header.component.html** the `<li>` tag has assigned the *active* bootsrap class, and with *routerLink* is possible to assign the correct route to be displayed; so is no more necessary the *Event Binding* to switch the routes
+* finally, in all the others **.html** files the changes are only the add of the *cursor*'s style property for `<a>` tags in order to show the cursor as pointer
+
+
+
 ## Lesson 12
 ### Services for recipes and shopping list
 * **html** and **typescript** files update:

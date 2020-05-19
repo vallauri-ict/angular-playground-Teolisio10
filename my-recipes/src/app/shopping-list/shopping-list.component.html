@@ -6,7 +6,12 @@
         <ul class="list-group">
             <!--<a appHighlight href="#" class="list-group-item" style="cursor: pointer" *ngFor="let item of ingredients">-->
             <!--<a appHighlight [defaultColor]="'LightGreen'" href="#" class="list-group-item" style="cursor: pointer" *ngFor="let item of ingredients">-->
-            <a [appHighlight]="'Orange'" [defaultColor]="'LightGreen'" href="#" class="list-group-item" style="cursor: pointer" *ngFor="let item of ingredients">
+            <a
+                style="cursor: pointer;"
+                [appHighlight]="'Orange'"
+                [defaultColor]="'LightGreen'"
+                class="list-group-item"
+                *ngFor="let item of ingredients">
                 {{ item.name }} ({{ item.amount }})
             </a>
         </ul>
