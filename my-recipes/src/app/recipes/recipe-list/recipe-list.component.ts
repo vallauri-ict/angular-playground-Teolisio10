@@ -1,8 +1,8 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, /*Output, EventEmitter*/ } from '@angular/core';
 
 // OCCORRE EFFETTUARE L'import MANUALMENTE NEL CASO L'IDE NON LO FACCIA
-import { Recipe } from '../recipe.model';
-import { DataStorageService } from '../../shared/data-storage.service';
+/*import { Recipe } from '../recipe.model';
+import { DataStorageService } from '../../shared/data-storage.service';*/
 import { RecipeService } from '../recipe.service';
 
 @Component({
@@ -11,7 +11,7 @@ import { RecipeService } from '../recipe.service';
   styleUrls: ['./recipe-list.component.css']
 })
 export class RecipeListComponent implements OnInit {
-  @Output() recipeWasSelected = new EventEmitter<Recipe>();
+  /*@Output() recipeWasSelected = new EventEmitter<Recipe>();*/
 
   
   // ARRAY DI Recipe DA VISUALIZZARE

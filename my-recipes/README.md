@@ -26,6 +26,21 @@ app.module.ts, app.component.ts, app-routing.component.ts
 
 
 
+## Lesson 13
+### Relate the ingredients in the Recipes
+* **html** and **typescript** files update:
+```
+┐
+├── recipe.service.ts
+│   └── recipe-detail.component.html and recipe-detail.component.ts
+└── shopping-list.service.ts
+```
+* in this lesson when a **recipe** is selected, the **recipe-detail** will show also the ingredients needed to make it; the *ingredients* are also displayed in the **shopping-list** the *ingredients* by clicking *To Shopping List* in **recipe-detail**
+* obviously the main management of all is done by the **.service.ts** files
+* in order to save in an array multiple objects, is used the spreed operator `...`
+
+
+
 ## Lesson 12
 ### Services for recipes and shopping list
 * **html** and **typescript** files update:
@@ -33,8 +48,8 @@ app.module.ts, app.component.ts, app-routing.component.ts
 db.json
 ├── app.module.ts
 ├──── recipe.component.html and recipe.component.ts, recipe.model-ts, recipe.service.ts
-│     └── recipe-list.component.html and recipe-list.component.html
-│         └── recipe-list.component.html and recipe-list.component.html
+│     └── recipe-list.component.ts and recipe-list.component.html
+│         └── recipe-item.component.ts and recipe-item.component.html
 └──── shopping-list.component.html and shopping-list.component.ts, shopping-list.service.ts
       └── shopping-edit.component.ts
 ```
