@@ -5,7 +5,11 @@
     </div>
     <div class="col-md-7">
     <!-- SE LA if NON E' VALORIZZATA ALLORA SI PASSA ALLA else, QUINDI E' MOSTRATO <ng-template> -->
-        <app-recipe-detail *ngIf="selectedRecipe; else infoText" [recipe]="selectedRecipe"> </app-recipe-detail>
-        <ng-template #infoText> <h3> Please select a Recipe! </h3> </ng-template>
+        <!--<app-recipe-detail *ngIf="selectedRecipe; else infoText" [recipe]="selectedRecipe"> </app-recipe-detail>
+        <ng-template #infoText>
+            <h3> Please select a Recipe! </h3>
+        </ng-template>-->
+        <!-- RIFERIMENTO ALLE SUB-ROUTING -->
+        <router-outlet> </router-outlet>
     </div>
 </div>

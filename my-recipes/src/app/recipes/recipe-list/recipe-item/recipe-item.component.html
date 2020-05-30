@@ -1,10 +1,12 @@
 <!--<a appHighlight href="#" (click)="onSelected()" class="list-group-item clearfix">-->
 <!--<a appHighlight [defaultColor]="'LightYellow'" href="#" (click)="onSelected()" class="list-group-item clearfix">-->
+<!--<a style="cursor:pointer;" [appHighlight] [defaultColor]="'LightYellow'" (click)="onSelected()" class="list-group-item clearfix">-->
 <a
+    [routerLink]="recipe.id"
+    routerLinkActive="active"
     style="cursor:pointer;"
     [appHighlight]
     [defaultColor]="'LightYellow'"
-    (click)="onSelected()"
     class="list-group-item clearfix"
     >
     <div class="pull-left">

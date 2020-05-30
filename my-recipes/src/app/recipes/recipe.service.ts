@@ -1,4 +1,4 @@
-import { Output, EventEmitter, Injectable } from '@angular/core';
+import { /*Output, EventEmitter,*/ Injectable } from '@angular/core';
 
 import { Recipe } from './recipe.model';
 import { DataStorageService } from '../shared/data-storage.service';
@@ -9,9 +9,10 @@ import { Ingredient } from '../shared/ingredient.model';
     providedIn: 'root'
 })
 export class RecipeService {
-    @Output() recipeSelected = new EventEmitter<Recipe>();
+    /*@Output() recipeSelected = new EventEmitter<Recipe>();*/
 
     public recipes: Recipe[];
+    public selectedRecipe: Recipe;
 
     constructor (private dataStorageService: DataStorageService, private shoppingListService: ShoppingListService) { };
 
@@ -20,6 +21,14 @@ export class RecipeService {
         this.dataStorageService.sendGetRequest('recipes').subscribe((data: any[]) => {
             console.log(data);
             this.recipes = data;
+        });
+    }
+
+    // SINGOLA RECIPE
+    getRecipe(index: number) {
+        this.dataStorageService.sendGetRequest('recipes/' + index).subscribe((data: Recipe) => {
+            console.log(data);
+            this.selectedRecipe = data;
         });
     }
 

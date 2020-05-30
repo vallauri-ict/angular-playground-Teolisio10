@@ -9,6 +9,28 @@ It will inlcude a collection of recipes in which the user have the possibility t
 
 
 
+## Lesson 15
+### Sub-routing
+* PRIMA PASSAVAMO DALLA LISTA PER TIRARE FUORI I DETAIL, MA SCRIVENDOLO NELL'URL IL PROCESSO NON VIENE ESGUITO
+* **html** and **typescript** files update:
+```
+db.json
+└── app-routing.module.ts
+    └── recipe.service.ts, recipes.component.ts and recipes.component.html, recipe.model.ts
+        ├── recipe-detail.component.ts and recipe-detail.component.html
+        ├──── recipe-item.component.ts and recipe-item.component.html
+        └── recipe-start.component.ts and recipe-start.component.html
+```
+* changes in order to permit the user to navigate with **sub-routing**, so in the url write */recipes/1*, where *1* is the **id** of the selected recipe, or just by clicking on the recipe the url change
+* creation of components, by CLI, **recipes-start**, that is used at the loading of the site and display a text
+    * also the `*ngIf` in the **recipes.component.html** is deleted, but is inserted the `<router-outlet>` tag, to permit **sub-routing**; also the **recipes.component.ts** is simplified because the *onInit* function is no more needed 
+* changes in **db.json** and so in **recipe.model.ts** because by adding the **id** property in the json the sub-routing is done automatically by **json-server**; so is necessary to apply changes also for *Recipe* that must have the id property available
+* the core of sub-routing is in the **app-routing.module.ts**, in fact in the routing related to */recipes*, is added the property *children*, that permit to have child route from the parent one; the routes added are the one that match at the load of the site that will load the **recipe-start** component, so */recipe/*, and the one that match when is inserted a number (the id) that will load the **recipe-detail** component, so */recipes/:id*
+* then in the **recipe.service.ts** the function *getRecipe()* permit to have all useful data related to the single selected recipe
+* in the **recipe-detail.component.ts** there is the switching for have the correct selected recipe; then the recipe is no more received as *@Input*, so when was used the *recipe* property now there is the *recipeService.selectedRecipe* property
+
+
+
 ## Lesson 14
 ### Routing
 * **html** and **typescript** files update:

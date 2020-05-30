@@ -1,5 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Recipe } from '../recipe.model';
+import { Component, OnInit, /*Input*/ } from '@angular/core';
+import { ActivatedRoute, Params } from '@angular/router';
 import { RecipeService } from '../recipe.service';
 
 @Component({
@@ -9,15 +9,20 @@ import { RecipeService } from '../recipe.service';
 })
 export class RecipeDetailComponent implements OnInit {
   // N.B. PER RICEVERE L'INPUT
-  @Input() recipe: Recipe;
+  /*@Input() recipe: Recipe;*/
 
   // INIETTIAMO NEL COSTRUTTORE IL SERVICE
-  constructor(private recipeService: RecipeService) { }
+  constructor(public recipeService: RecipeService, private route: ActivatedRoute) { }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    this.route.params.subscribe((params: Params) => {
+      // CON IL + SI EFFETTUA UN CAST
+      this.recipeService.getRecipe(+params['id']);
+    });
+  }
   
   // RICHIAMO DEL METODO MESSO A DISPOSIZIONE DAL SERVICE
   onAddToShoppingList() {
-    this.recipeService.addIngredientsToShoppingList(this.recipe.ingredients);
+    this.recipeService.addIngredientsToShoppingList(this.recipeService.selectedRecipe.ingredients);
   }
 }

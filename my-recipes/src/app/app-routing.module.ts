@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { RecipesComponent } from './recipes/recipes.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
+import { RecipesStartComponent } from './recipes/recipes-start/recipes-start.component';
+import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
 
 const appRoutes: Routes = [
     { 
@@ -15,7 +17,12 @@ const appRoutes: Routes = [
         // PATH
         path: 'recipes',
         // COMPONENTE ASSOCIATO CHE TIRA SU
-        component: RecipesComponent
+        component: RecipesComponent,
+        children: [
+            { path: '', component: RecipesStartComponent },
+            // SUB-ROUTING IN BASE ALLA SINGOLA Recipe
+            { path: ':id', component: RecipeDetailComponent }
+        ]
     },
     {
         path: 'shopping-list',

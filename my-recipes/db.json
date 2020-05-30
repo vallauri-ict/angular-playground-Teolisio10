@@ -1,6 +1,7 @@
 {
     "recipes": [
         {
+            "id": 0,
             "name": "Grilled meat",
             "description": "This is simply a test.",
             "imagePath": "https://cdn.pixabay.com/photo/2016/06/15/19/09/food-1459693_960_720.jpg",
@@ -16,6 +17,7 @@
             ]
         },
         {
+            "id": 1,
             "name": "Pancakes",
             "description": "A great recipe to test.",
             "imagePath": "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg",
@@ -31,6 +33,7 @@
             ]
         },
         {
+            "id": 2,
             "name": "Burrito",
             "description": "A flour tortilla rolled or folded around a filling (as of meat, beans, and cheese).",
             "imagePath": "https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg",
@@ -50,6 +53,7 @@
             ]
         },
         {
+            "id": 3,
             "name": "Fruitcake",
             "description": "Fresh cake made with candied or dried fruit, nuts, and spices, and optionally soaked in spirits.",
             "imagePath": "https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg",
@@ -73,6 +77,7 @@
             ]
         },
         {
+            "id": 4,
             "name": "Tomato Pasta",
             "description": "Pasta al pomodoro is an Italian food typically prepared with pasta, olive oil, fresh tomatoes, basil, and various other fresh ingredients.",
             "imagePath": "https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg",
