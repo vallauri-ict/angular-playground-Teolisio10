@@ -8,10 +8,24 @@ This is going to be an app for the shopping list compiling.<br>
 It will inlcude a collection of recipes in which the user have the possibility to watch and edit details.
 
 
+## Lesson 16
+### New Recipe
+* **html** and **typescript** files update:
+```
+app-routing.module.ts
+├── recipe-detail.component.ts, recipes-detail.component.html
+├── recipe-edit.component.ts and recipe-edit.component.html
+└── recipe-list.component.ts and recipe-list.component.html
+```
+* first of alla is necessary a new route for adding a recipe, so in the **app-routing.module.ts** file the route */recipes/new* is added; pay attention to insert it before the navigations route (*/:id* and */:id/edit*)
+* **recipe-edit** folder created by CLI, and so all the files that it includes
+    * the html will show a simple text for now, because a form should be implemented; so the html pages **recipe-list** and the **recipe-detail** now have a function associated for the route navigation when the creation of a new recipe is called
+
+
+
 
 ## Lesson 15
 ### Sub-routing
-* PRIMA PASSAVAMO DALLA LISTA PER TIRARE FUORI I DETAIL, MA SCRIVENDOLO NELL'URL IL PROCESSO NON VIENE ESGUITO
 * **html** and **typescript** files update:
 ```
 db.json
